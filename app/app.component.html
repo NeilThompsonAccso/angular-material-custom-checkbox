@@ -1,0 +1,11 @@
+<mat-checkbox color="primary">Primary</mat-checkbox>
+<mat-checkbox color="accent">Accent</mat-checkbox>
+<mat-checkbox color="warn">Warn</mat-checkbox>
+
+<app-custom-checkbox
+  [checked]="isChecked"
+  (onCheckChange)="onCheckChange($event)"
+  [text]="'Test'"
+></app-custom-checkbox>
+<br />
+<p>CheckBox Value : {{ isChecked }}</p>
